@@ -13,10 +13,21 @@ let salamander = {
 };
 
 
-// After you have created the other object literals, add the astronautID property to each one.
+superChimpOne.astronautID = "CHAD001";
+salamander.astronautID = "LACEY002";
 
-// Create an array to hold the animal objects.
 
-// Print out the relevant information about each animal.
+let animalArray = [superChimpOne, salamander];
 
-// Start an animal race!
+
+animalArray.forEach(animal => {
+   console.log(`Name: ${animal.name}`);
+   console.log(`Species: ${animal.species}`);
+   console.log(`Mass: ${animal.mass} kg`);
+   console.log(`Age: ${animal.age} years`);
+   console.log(`Astronaut ID: ${animal.astronautID}`);
+   console.log("------------");
+});
+
+
+console.log("The animal race is about to begin!");
